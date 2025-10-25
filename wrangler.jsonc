@@ -1,0 +1,30 @@
+{
+  "name": "merceariabila",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2025-10-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_values"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "admin-db",
+      "database_id": "0d373c4c-5bdf-41c9-8fd3-d5ad6225f8ab"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "saas-admin-template-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
